@@ -23,7 +23,21 @@ $(document).ready(function () {
   };
   
   function answer() {
-    var ansArray = ["Maybe.", "Never know until you try!", "You might want to think twice about it.", "Give it some thought.", "Yes, go for it!", "Yes.", "Um, no.", "N.O.", "It depends on you.", "Are you kidding me?! OF COURSE!", "Don't ask the obvious ;)", "Maybe.....?", "Maybe, maybe not."];
+    var ansArray = [
+      "Maybe.", 
+      "Never know until you try!", 
+      "You might want to think twice about it.", 
+      "Give it some thought.", 
+      "Yes, go for it!", 
+      "Yes.", 
+      "Um, no.", 
+      "N.O.", 
+      "It depends on you.", 
+      "Are you kidding me?! OF COURSE!", 
+      "Don't ask the obvious ;)", 
+      "Maybe.....?", 
+      "Maybe, maybe not.",
+      "Sounds fun, try giving it a go!"];
     var random = Math.floor(Math.random() * (ansArray.length));
     $("#answer").html('<h4 class = "ansCSS">' + ansArray[random] + '</h4>');
   };
